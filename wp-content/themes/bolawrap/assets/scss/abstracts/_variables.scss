@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular ( Open Sans ) font family
+$font-family-base:  'DINPro', 'Arial', sans-serif !default;
+
+/// Code (Courier) font family
+$font-family-code:  'DINPro','Arial', sans-serif !default;
+
+/// body contect text size
+$font-size-base:    16px !default;
+$font-size-small:   $font-size-base - 2 !default;
+$font-size-large:   $font-size-base + 2 !default;
+
+// Colors
+$brand-primary :   #ffc208 !default;
+$brand-secondary : #ff9c01 !default;
+
+// Start with assigning color names to specific hex values.
+$white:  #fff !default;
+$black:  #000 !default;
+$blue:  #192b38 !default;
+$blue2:  #0c314c !default;
+$light-blue: #b3c2ce !default;
+$light-blue2: #dfe7ee !default;
+$gray:   #464a4c !default;
+$light-gray:   #8e8e8e !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg:       $white !default;
+$body-color:    $black !default;
+
+// text color
+$text-color:   $black !default ;
+
+// Heading font family
+$font-size-h1:  64px !default;
+$font-size-h2:  42px !default;
+$font-size-h3:  34px !default;
+$font-size-h4:  27px !default;
+$font-size-h5:  20px !default;
+$font-size-h6:  18px !default;
+
+$headings-margin-bottom: 15px !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   700 !default;
+$headings-line-height:   1.2 !default;
+$headings-color:         $text-color !default;
+
+// Forms
+$label-color:           $text-color;
+$label-font-weight:     400;
+$label-font-family:     $font-family-base;
+$label-font-size:       $font-size-small;
+
+$input-bg:                  $white;
+$input-font-family:         $font-family-base;
+$input-font-size:           $font-size-base;
+$input-font-weight:         400;
+$input-color:               $brand-primary;
+$input-color-placeholder:   $brand-secondary;
+$input-height-base:         50px;
+$input-height-large:        65px;
+$input-height-small:        50px;
+$input-radius:              0;
+$input-border-color:        $brand-secondary;
+$input-border-color-focus:  $brand-secondary;
+$textarea-height-base:      150px;
+
+/// Container's maximum width
+$container-width:   1720px !default;
+
+// media query breakpoints.
+$breakpoints: (
+  'sm': 641px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1200px,
+  'xxl': 1441px,
+  'xxxl': 1720px
+);
+
+// spacing : padding and margin
+$spaceamounts: (0, 20, 30, 40, 50,120);
+

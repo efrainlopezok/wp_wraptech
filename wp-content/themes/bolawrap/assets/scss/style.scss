@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+/* theme fonts goes here */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+// Configuration and helpers
+@import
+	'abstracts/variables',
+	'abstracts/mixins';
+
+// Base stuff
+@import
+	'base/fonts',
+	'base/normalize',
+	'base/helpers',
+	'base/typography',
+	'base/buttons',
+	'base/forms';
+
+// Vendors
+@import
+	'vendors/slick',
+	'vendors/jquery.fancybox.min';
+
+// Components
+@import
+	'components/header',
+	'components/device-menu',
+	'components/footer';
+
+// Page-specific styles
+@import
+	'pages/home',
+	'pages/single-post',
+	'pages/media',
+	'pages/investor',
+	'pages/aboutus',
+	'pages/purchase',
+	'pages/default'; //global style code goes here

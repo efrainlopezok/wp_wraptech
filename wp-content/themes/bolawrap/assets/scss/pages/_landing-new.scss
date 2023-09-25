@@ -1,0 +1,383 @@
+body.page-template-template-landing-new{
+  .mobile{
+    display: none;
+  }
+
+  .hero-img.landing img{
+    object-fit: cover;
+  }
+
+  .page-template-template-armor section.hero-section.dark-bg.armor:before {
+    background-color: rgb(2 30 46 / 62%) !important;
+  }
+
+  .hero-section.armor .hero-caption .btn-group {
+    margin-top: 55px;
+  }
+
+  .btn-goup-big .btn-big:first-child a {
+    border-radius: 0px 0px 0px 5px;
+  }
+
+  .btn-goup-big .btn-big:last-child a {
+    border-radius: 0px 0px 5px 0px;
+  }
+
+  .product_bottom_img iframe {
+    border: 15px solid #f0f6f7;
+    border-radius: 15px;
+    box-shadow: 0 11px 32px 0 rgba(89, 89, 89, .52);
+    position: relative;
+    top: -95px;
+    width: 560px !important;
+    max-width: 100%;
+    height: 310px !important;
+  }
+
+  .hero-section .details-wrapper a.btn {
+    margin-top: 20px;
+  }
+
+  .hero-section .details-wrapper h3 {
+    font-size: 3em;
+    margin-top: 1.6em;
+  }
+
+  .bola-points.product-cover .product-right .top-product .top-product-img #product_top_image {
+    right: 31%;
+    top: 70%;
+  }
+
+  .bola-points.product-cover .container.custom-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bola-points.product-cover .product-left {
+    width: 45%;
+  }
+
+
+  .product-featured-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+    background: #FFF;
+    padding: 1rem 0;
+  }
+
+  .product-featured-description .left {
+    width: 55%;
+    margin-right: 5%;
+    display: inline-block;
+  }
+
+  .product-featured-description .right {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .product-featured-description .right p {
+    font-size: 20px;
+  }
+
+  .product-featured-description .right .btn {
+    margin-top: 1rem;
+  }
+
+
+
+
+  .product-left-img {
+    margin-top: -90px;
+    margin-bottom: 120px
+  }
+
+  @media(max-width:767px) {
+    .hero-section.armor .hero-caption .btn-group {
+      margin-top: 30px;
+    }
+    .product_bottom_img iframe {
+      height: 50vw !important;
+      top: 0;
+    }
+  }
+
+  .bola-points.product-cover .product-left {
+    width: 35%;
+  }
+
+  .product-cover .product-left .product-left-img {
+    width: 100% !important;
+  }
+
+  .bola-points.product-cover .product-left .product-content{
+    top: 10%;
+    left: 125%;
+  }
+  .product-cover .product-right .top-product{
+    width: 100%;
+  }
+  .bola-points.product-cover .product-right .top-product .top-product-img{
+    width: 100%;
+  }
+  .bola-points.product-cover .product-right .top-product .top-product-img .product-main-img.first{
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .bola-points.product-cover .product-right{
+    width: 25%;
+    margin: 0 0 0 auto;
+    top: -50px;
+    position: relative;
+  }
+  .bola-wrap-demostration-image{
+    width: 50.7%;
+    margin: 0 4% 0 auto;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-65%);
+  }
+  .section-experience{
+    margin-top: -240px;
+    padding-top: 0;
+    position: relative;
+    z-index: 4;
+  }
+  .section-experience .content{
+    text-align: center;
+    max-width: 725px;
+    margin: 35px auto;
+    padding: 0 15px;	
+    font-size: 18px;
+  }
+  /* .section-experience h2{
+    text-align: center;
+    font-size: 3.8rem;
+  }
+  .section-experience p{
+    
+  } */
+  .section-experience .landing-slider{
+    background: transparent;
+    padding: 0 0 100px;
+    overflow: hidden;
+    margin: 20px 0 50px;
+  }
+  .section-experience .landing-slider .wrap-slide-landing{
+    top: 0;
+    background: transparent;
+    box-shadow: none;
+    width: 106%;
+    margin-left: -3%;
+  }
+
+
+  .hover-section .bg-cover .bar-options .bar-item.h-active,
+  .hover-section .bg-cover .bar-options .bar-item:hover{
+    background: url('../images/landing_new_getbola_bg.jpg') right center no-repeat !important;
+  }
+  .hover-section .bg-cover .bar-options .bar-item{
+    height: 292px;
+  }
+  .hover-section .bg-cover .bar-options .bar-item h5{
+    font-size: 32px;
+  }
+  .hover-section .bg-cover .bar-options .bar-item p{
+    font-size: 20px;
+    width: 100%;
+    line-height: 1.5;
+    padding-left: 5px;
+  }
+  .hover-section .bg-cover .bar-options .bar-item a{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;	
+  }
+  .client-logo.our-partners{
+    background: #e8eff4;
+    padding: 65px 0 !important;
+  }
+  .client-logo.our-partners .client-logo-inner .client-item.grayscale{
+    opacity: 1 !important;
+  }
+  .our-partners h2{
+    text-align: center;
+    padding: 0 25px 15px;
+  }
+  .our-partners .client-logo-inner{
+    justify-content: center;
+      display: flex;
+  }
+  .our-partners .client-logo-inner::before,
+  .our-partners .client-logo-inner::after{
+    display: none;
+  }
+  .bolawrap-presence h2.featured-title{
+    text-align: center;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+
+
+
+  .product-featured-description .left h2,
+  .bolawrap-presence h2.featured-title,
+  .section-experience .inner-slider-title h2{
+    font-size: 3.2rem;
+  }
+
+  .product-featured-description .right p,
+  .section-experience .inner-slider-title .content p,
+  .product-content .product-content-item p{
+    font-size: 18px !important;
+  }
+
+  .client-logo .client-logo-inner .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: #ffc208 !important;
+  }
+
+  .client-logo .client-logo-inner .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail{
+    background: white !important;
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 769px){
+
+    .product-featured-description .left h2,
+    .bolawrap-presence h2.featured-title,
+    .section-experience .inner-slider-title h2{
+      font-size: 2.4rem;
+    }
+
+    .product-featured-description .right p,
+    .section-experience .inner-slider-title .content p,
+    .product-content .product-content-item p{
+      font-size: 17px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px){
+
+    .mobile{
+      display: block;
+    }
+
+    .hero-caption .container {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+
+
+
+    .product-featured-description{
+      margin-bottom: 2rem;
+    }
+    .product-featured-description .left,
+    .product-featured-description .right{
+      width: 100%;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-featured-description .right .mobile img{
+      max-width: 18px;
+      transform: rotate(-90deg);
+      margin: 15px 0;
+    }
+
+    .product-featured-description h2,
+    .product-featured-description p{
+      text-align: center;
+    }
+
+    .product-featured-description a.btn{
+      margin-top: 1rem;
+    }
+
+
+
+
+    .bola-points .mob .product-left .product-main-img{
+      width: 100%;
+    }
+    .bola-points.product-cover .mob .product-left{
+      width: 70%;
+    }
+    .bola-wrap-demostration-image{
+      transform: none;
+      width: 90%;
+      margin: 0 5%;
+    }
+    .bola-points.product-cover .product-left .product-content{
+      left: 0;
+      top: 0;
+    }
+
+
+
+
+    .hover-section .bg-cover{
+      height: 580px;
+    }
+    .hover-section .bg-cover .bar-options .bar-item{
+      height: 160px;
+      padding: 18px 0 !important;
+    }
+    .hover-section .bg-cover .bar-options .bar-item:first-of-type{
+      height: 260px;
+      padding: 100px 0 18px !important;
+    }
+    .hover-section .bg-cover .bar-options .bar-item a{
+      padding: 0px 40px;
+    }
+
+
+
+    
+
+
+
+    .section-experience{
+      margin-top: 0;
+    }
+
+    .section-experience .inner-slider-title .content p{
+      text-align: left;
+    }
+    .section-experience .inner-slider-title h2{
+      text-align: left;
+      margin: 0;
+      padding: 0 15px;
+    }
+    .section-experience .content{
+      margin: 10px 0 30px;
+    }
+
+    .product-featured-description .left h2,
+    .bolawrap-presence h2.featured-title,
+    .section-experience .inner-slider-title h2{
+      font-size: 2.1rem;
+    }
+
+    .product-featured-description .right p,
+    .section-experience .inner-slider-title .content p,
+    .product-content .product-content-item p{
+      font-size: 16px !important;
+    }
+
+
+  }
+}

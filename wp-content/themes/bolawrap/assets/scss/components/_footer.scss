@@ -1,0 +1,346 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+/*--- footer ---*/
+.main-footer {
+    width: 100%;
+    height: auto;
+    background: rgb(17,29,41);
+    background: -moz-linear-gradient(left, rgba(17,29,41,1) 0%, rgba(31,69,108,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(17,29,41,1) 0%,rgba(31,69,108,1) 100%);
+    background: linear-gradient(to right, rgba(17,29,41,1) 0%,rgba(31,69,108,1) 100%);
+    line-height: normal;
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    .footer-text-bg{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.3;
+        pointer-events: none;
+        @include respond-below(md) {
+            top: 60px;
+            transform: none;
+        }
+    }
+    .footer-left{
+        width: 50%;
+        align-self: flex-end;
+        @include respond-between(md,lg){
+            width: 45%;
+            padding-right: 30px;
+        }
+        @include respond-below(md) {
+            margin-bottom: 47px;
+        }
+        @include respond-below(sm) {
+            width: 100%;
+            align-self: flex-start;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+		.footer-logo{
+			max-width: 200px;
+			@include respond-below(sm) {
+				margin: 0 auto;
+				max-width: 150px;
+			}
+		}
+        a {
+            display: block;
+            img {
+                @include respond-below(md) {
+                    max-width: 211px;
+                }
+                @include respond-below(sm) {
+                    max-width: 140px;
+                }
+            }
+        }
+        .social-link {
+            @include respond-below(md) {
+                display: none;
+            }
+        }
+        @at-root .social-link{
+            margin-top: 110px;
+            @include respond-below(md) {
+                margin-top: 30px;
+            }
+            ul{
+                padding-left: 0;
+                margin-bottom: 15px;
+                li{
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-top: 10px;
+                    padding-bottom: 0;
+                    line-height: 1;
+                    &:last-child{
+                        a{
+                            margin-right: 0;
+                            padding-right: 0;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: $font-size-base;
+                        line-height: 1;
+                        margin-right: 16px;
+                        padding-right: 16px;
+                        position: relative;
+                        &:hover, &:focus{
+                            color: $brand-primary;
+                        }
+                        @include respond-below(lg) {
+                            margin-right: 9px;
+                            padding-right: 9px;
+                        }
+                        @include respond-below(sm) {
+                            font-size: $font-size-base - 3;
+                        }
+                        &:before{
+                            content: "";
+                            height: 14px;
+                            width: 1px;
+                            background: $white;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            margin-top: 1px;
+                        }
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                        a{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-right{
+        width: 50%;
+        @include respond-between(md,lg){ 
+            width: 55%;
+        }
+        @include respond-below(md) {
+            width: 100%;
+        }
+        .footer-right-item {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+            font-size: $font-size-base;
+            @include respond-between(md,lg) {
+                width: 38%;
+            }
+            @include respond-below(sm) {
+                width: 100%;
+                text-align: center;
+            }
+            + .footer-right-item{
+                @include respond-between(md,lg) {
+                    width: 60%;
+                }
+            }
+            .footer-title{
+                font-weight: 400;
+                position: relative;
+                text-transform: uppercase;
+                padding: 20px 0;
+                letter-spacing: 0.1em;
+                margin-bottom: 30px;
+                @include respond-below(md) {
+                    font-size: 21px;
+                }
+                @include respond-below(sm) {
+                    margin-bottom: 15px;
+                    padding: 10px 0;                
+                }
+                &:before{
+                    content: "";
+                    height: 3px;
+                    width: 52px;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background: $white;
+                    opacity: 0.23;
+                    @include respond-below(sm) {
+                        margin: 0px auto;
+                        right: 0;
+                        width: 26px;
+                    }
+                }
+            }
+            .menu{
+                padding: 0;
+                margin-bottom: 0;
+				column-count: 2;
+				max-width: 310px;
+				padding-right: 50px;
+				@include respond-below(lg) {
+					column-count: 1;
+					padding-right: 0;
+				}
+				@include respond-below(md) {
+					max-width: 190px;
+				}
+                @include respond-below(sm) {
+                    margin: auto;
+                    text-align: left;
+                    -webkit-column-count: 2;
+                    -moz-column-count: 2;
+                    column-count: 2;
+                    margin-bottom: 40px;
+					max-width: 100%;
+					display: inline-block;
+					font-size: 0;
+                }
+                li{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    @include respond-below(md) {
+                        padding: 6px 0;
+                    }
+                    @include respond-below(sm) {
+                        margin-bottom: 0;
+						padding: 10px 20px 10px 40px;
+						display: table;
+						width: auto;
+                    }
+                    a{
+                        font-size: $font-size-base;
+                        text-decoration: none;
+                        &:hover, &:focus{
+                            color: $brand-primary;
+                        }
+                        @include respond-below(sm) {
+                            font-size: $font-size-base - 2;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .footer-address {
+                max-width: 180px;
+                letter-spacing: 0.05em;
+                margin-bottom: 18px;
+                @include respond-below(md) {
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+                @include respond-below(sm) {
+                    font-size: $font-size-base - 2;
+                }
+            }
+            .footer-contact{
+                letter-spacing: 0.05em;
+                margin-bottom: 15px;
+                @include respond-below(md) {
+                    margin-bottom: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    &:hover, &:focus{
+                        color: $brand-primary;
+                    }
+                    @include respond-below(sm) {
+                        font-size: $font-size-base - 2;
+                    }
+                }
+            }
+            .footer-email{
+                letter-spacing: 0.05em;
+                margin-bottom: 15px;
+                a{
+                    text-decoration: none;
+                    &:hover, &:focus{
+                        color: $brand-primary;
+                    }
+                    @include respond-below(sm) {
+                        font-size: $font-size-base - 2;
+                    }
+                }
+            }
+            @at-root .footer-social{
+                margin-top: 60px;
+                @include respond-below(sm) {
+                    margin-top: 40px;
+                }
+                ul{
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    li{
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: $font-size-base + 2;
+                        line-height: 1;
+                        padding: 0;
+                        margin-right: 15px;
+                        @include respond-below(lg) {
+                            margin-right: 12px;
+                        }
+                        i{
+                            transition: 0.4s ease;
+                        }
+                        a{
+                            &:hover, &:focus{
+                                i{
+                                    color: $brand-primary;
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .social-link{
+        @include respond-below(sm) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.site-built-by {
+    color: $white;
+    text-align: right;
+    position: relative;
+    top: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 14px;
+	opacity: 0.8;
+	@include respond-below(lg) {
+		padding-top: 50px;
+		top: 0;
+	}
+	@include respond-below(md) {
+		text-align: center;
+	}
+}
+.site-built-by a{
+	text-decoration: none;
+	color: $white;
+}
+.site-built-by img {
+    width: 16px;
+	vertical-align: middle;
+    margin-left: 5px;
+}
+#wpfront-scroll-top-container{
+	bottom: 60px !important;
+}

@@ -1,0 +1,150 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 9px 24px;
+	vertical-align: top;
+	color: $black;
+	font-size: $font-size-base;
+	line-height: 1.5;
+	text-align: center;
+	border: none;
+	text-transform: uppercase; 
+	border-radius: 7px;
+	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+	text-decoration: none;
+    font-weight: 700;
+    background: $brand-secondary;
+    background: -moz-linear-gradient(left, $brand-secondary 0%, $brand-primary 100%);
+    background: -webkit-linear-gradient(left, $brand-secondary 0%, $brand-primary 100%);
+    @include respond-below(md) {
+        font-size: $font-size-base - 2;
+    }
+
+	&:hover,
+	&:focus {
+        background: $brand-primary;
+        background: -moz-linear-gradient(left, $brand-primary 0%, $brand-secondary 100%);
+        background: -webkit-linear-gradient(left, $brand-primary 0%, $brand-secondary 100%);
+        text-decoration: none;
+	}
+	&-link {
+		margin-bottom: 2px;
+		color: $brand-primary;
+		font-size: 24px;
+		text-decoration: none;
+        font-weight: 700;
+        position: relative;
+        padding-right: 20px;
+        text-decoration: none;
+        @include respond-below(xl) {
+            font-size: 22px; 
+        }
+        
+        &:before{
+            content: "";
+            border-left: 14px solid $brand-primary;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            transition: 0.3s ease;
+            @include respond-below(xl) {
+                top: 9px;
+            }
+        }
+
+		&:hover,
+		&:focus {
+			color: $blue;
+			text-decoration: none;
+            &:before{
+                border-left-color: $blue;
+            }
+		}
+	}
+	&.custom-play{
+        padding-left: 75px;
+		line-height: 34px;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s ease;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+		position: relative;
+		&:before{
+			content: "";
+			background-image: url(../images/playbutton_black.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 42px;
+			height: 32px;
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-size: contain;
+			@include respond-below(md) {
+            	width: 22px;
+			}
+		}
+        @include respond-below(md) {
+            padding-left: 52px;
+			line-height: 1.5;
+			padding-top: 10px;
+			padding-bottom: 10px;
+        }
+		@include respond-below(sm) {
+			font-size: 13px;
+		}
+	}
+    &-play{
+        background: url(../images/playbutton.png) center left no-repeat;
+        padding-left: 76px;
+        line-height: 54px;
+        display: inline-block;
+        vertical-align: top;
+        background-size: 53px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.4s ease;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        @include respond-below(md) {
+            background-size: 36px;
+            padding-left: 50px;
+        }
+        &:hover,
+		&:focus {
+			color: $brand-primary;
+			text-decoration: none;
+			@include respond-above(xl){
+            	padding-left: 72px;
+			}
+            padding-right: 4px;
+		}
+    }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@extend .btn;
+	-webkit-appearance: button;
+}
+
+button.fancybox-button{
+    background: $brand-primary !important;
+    color: $black;
+    &:hover, &:focus{
+        background: $black !important;
+        color: $white;
+    }
+}
